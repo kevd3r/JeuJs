@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*variables used by document*/
+$width: "width";
+$height: "height";
+$backgrounColor : "lightgray";
+/* mixins used in this work*/
+@mixin width-height($width,$height){
+  width: $width;
+  height: $height;
+}
+/*Scss for hooks*/
+body{
+  background: linear-gradient(to right,#BF953F,#FCF6BA,#B38728,#FBF5B7,#AA771C);
+}
+
+#rolldice-result{
+  @include width-height(50px, 50px);
+  background-color: blue;
+}
+.container{
+  background-color: red;
+  @include width-height(90%,90%);
+}
